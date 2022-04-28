@@ -38,13 +38,19 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "simple-git-hooks": {
-    "pre-commit": "lint-staged",
-    "pre-push": "npm run test"
-  },
   "nodemonConfig": {
     "ignore": [
       "*.test.js"
     ]
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "npx prettier --write",
+      "npx eslint --fix"
+    ]
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged",
+    "pre-push": "npm run test"
   }
 }
