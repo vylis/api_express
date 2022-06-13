@@ -61,18 +61,18 @@ describe('get articles', () => {
   });
 });
 
-describe('Post user', () => {
-  it('should create a new user', async () => {
-    const res = await request(app).post('/users').send({
-      username: 'ro',
-      email: 'ro@ro.ro',
-      password: 'ro',
-    });
+// describe('Post user', () => {
+//   it('should create a new user', async () => {
+//     const res = await request(app).post('/users').send({
+//       username: 'ro',
+//       email: 'ro@ro.ro',
+//       password: 'ro',
+//     });
 
-    expect(res.statusCode).toEqual(200);
-    expect(res.body);
-  });
-});
+//     expect(res.statusCode).toEqual(200);
+//     expect(res.body);
+//   });
+// });
 
 describe('get users', () => {
   it('should get all users', async () => {
