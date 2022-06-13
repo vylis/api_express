@@ -42,24 +42,24 @@ describe('app', () => {
 
 // end point
 
-describe('Post article', () => {
-  it('should create a new article', async () => {
-    const res = await request(app).post('/articles').send({
-      user_id: 1,
-      title: 'test is cool',
-      article: 'test is cool cool text',
-    });
-    expect(res.statusCode).toEqual(200);
-    expect(res.body);
-  });
-});
+// describe('Post article', () => {
+//   it('should create a new article', async () => {
+//     const res = await request(app).post('/articles').send({
+//       user_id: 1,
+//       title: 'test is cool',
+//       article: 'test is cool cool text',
+//     });
+//     expect(res.statusCode).toEqual(200);
+//     expect(res.body);
+//   });
+// });
 
-describe('get articles', () => {
-  it('should get all articles', async () => {
-    const res = await request(app).get('/articles');
-    expect(res.statusCode).toEqual(200);
-  });
-});
+// describe('get articles', () => {
+//   it('should get all articles', async () => {
+//     const res = await request(app).get('/articles');
+//     expect(res.statusCode).toEqual(200);
+//   });
+// });
 
 // describe('Post user', () => {
 //   it('should create a new user', async () => {
@@ -74,12 +74,12 @@ describe('get articles', () => {
 //   });
 // });
 
-describe('get users', () => {
-  it('should get all users', async () => {
-    const res = await request(app).get('/users');
-    expect(res.statusCode).toEqual(200);
-  });
-});
+// describe('get users', () => {
+//   it('should get all users', async () => {
+//     const res = await request(app).get('/users');
+//     expect(res.statusCode).toEqual(200);
+//   });
+// });
 
 // test('GET /users/:id', async () => {
 //   const post = await request(app)
