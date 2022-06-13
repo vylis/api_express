@@ -13,5 +13,8 @@ npm run test
 //lint
 npm run lint
 
+//prettier
+npm run prettier
+
 // set git hooks
-npx simple-git-hooks
+npm run githooks
